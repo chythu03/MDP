@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+      
+      <link rel="stylesheet" href="main.css">
+
+    <title>FixKar</title>
+    <link rel = "icon" type = "image/png" href = "Images/test4.png">
+      <style>
+          @import url('https://fonts.googleapis.com/css?family=Exo|Mako|Questrial|Quicksand');
+          *{
+              /*font-family: "Quicksand";*/
+              font-family: "Questrial";
+          }
+          #image{
+              height: 400px;
+              width: 950px;
+          }
+      .icons{
+              padding: 5px;
+          }
+          .icons li{
+              padding: 10px;
+          }
+           @media (max-width: 480px) { 
+               #image{
+                   height: 200px;
+                   width: 350px;
+               }
+            }
+
+            @media only screen and (min-width: 540px) {
+              /* For tablets: */
+                #image{
+                   height:270px;
+                   width: 500px;
+               }
+
+            }
+            @media only screen and (min-width: 768px) {
+              /* For desktop: */
+                #image{
+                      height: 400px;
+                      width: 950px;
+                  }
+            }
+          
+      </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">  
+    <nav class="navbar navbar-inverse navbar-fixed-top bg-dark navbar-dark navbar-expand-md">
+        <img src="Images/test2.png" style="height: 30px;width: 30px">
+    <a class="navbar-brand" href="index.html">FixKar</a>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav" style="float: right">
+      <li><a href="index.html#section1">HOME</a></li>
+      <li><a href="index.html#section2">ABOUT US</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES </a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#section3" style="color: gray">Wheels</a></li>
+          <li><a href="index.html#section3-1" style="color: gray">Lights</a></li>
+          <li><a href="index.html#section3-2" style="color: gray">Seat Covers</a></li>
+            <li><a href="index.html#section3-3" style="color: gray">Shark Fin</a></li>
+            <li><a href="index.html#section3-4" style="color: gray">Media Player</a></li>
+            <li><a href="index.html#section3-5" style="color: gray">Colour your Car</a></li>
+        </ul>
+      </li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="index.html#section4">TEAM</a></li>
+      <li><a href="index.html#section5">TESTIMONIALS</a></li>
+      <li><a href="index.html#section6">CONTACT US</a></li>
+        <li><a href="visual.html">VISUALIZE</a></li>
+      <li><a href="estimate.html" target="_blank">ESTIMATE</a></li>
+    </ul>
+      </div>
+     <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+          </button>
+        </div>    
+    </nav>
+    <section style="height: 85vh;padding-top: 80px;">
+        <div class="container" style="border: 1px solid black">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                    
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 ">
+                    <select class=" form-control" id="brand" name="brand" onchange="model()">
+                        <option>--Brand--</option>
+                        <option>Audi</option>
+                        <option>BMW</option>
+                      </select>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                    <select class=" form-control" id="model" name="model" >
+                        
+                      </select>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                    <select class=" form-control" id="color" name="color">
+                       
+                      </select>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col=lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="Images/second.jpg"  id="image" alt="Image Not found">
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+<script>
+    
+function model(){
+    var Audi = {
+        ValueA1 : '--Model--',
+        ValueQ7 : 'Q7',
+        ValueA3 : 'A3'
+    };
+    var BMW = {
+        ValueA2 : '--Model--',
+        Value330I : '330I',
+        ValueM4 : 'M4'
+    };
+    var choice = document.getElementById("brand").value;
+    var select = document.getElementById("model");
+    if(choice === 'Audi'){
+        select.options.length = 0;
+    for(index in Audi) {
+        
+        select.options[select.options.length] = new Option(Audi[index], index);
+     }
+    }
+    if(choice === 'BMW'){
+        select.options.length = 0;
+    for(index in BMW) {
+        
+        select.options[select.options.length] = new Option(BMW[index], index);
+     }
+    }
+    
+}
+             
+</script>
+<script>
+  document.getElementById("model").onchange=function(){
+        var A3 = {
+            ValueA3A : '--Color--',
+            ValueA3B : 'Brown Metallic',
+            ValueA3C : 'Red',
+            ValueA3D : 'Gray',
+            ValueA3E : 'White Metallic',
+            ValueA3F : 'Blue Metallic'
+        };
+        var Q7 = {
+            ValueQ7A : '--Color--',
+            ValueQ7B : 'Brown Metallic',
+            ValueQ7C : 'Silver Metallic',
+            ValueQ7D : 'Black',
+            ValueQ7E : 'White Crystal',
+            ValueQ7F : 'Ink Blue Metallic'
+        };
+      var m330I = {
+            Value330IA : '--Color--',
+            Value330IB : 'Glaciersilber Metallic',
+            Value330IC : 'Red Metallic',
+            Value330ID : 'Jet Black',
+            Value330IE : 'White',
+            Value330IF : 'Gray Metallic'
+        };
+      var M4 = {
+            ValueM4A : '--Color--',
+            ValueM4B : 'Orange Metallic',
+            ValueM4C : 'Yellow Metallic',
+            ValueM4D : 'Black Metallic',
+            ValueM4E : 'White',
+            ValueM4F : 'Blue Metallic'
+        };
+        var choice1 = document.getElementById("model").value;
+   
+        var select1 = document.getElementById("color");
+        if(choice1 === 'ValueA3'){
+            select1.options.length = 0;
+            for(index in A3) {
+                select1.options[select1.options.length] = new Option(A3[index], index);
+             }
+        }
+        if(choice1 === 'ValueQ7'){
+            select1.options.length = 0;
+            for(index in Q7) {
+                select1.options[select1.options.length] = new Option(Q7[index], index);
+             }
+        }
+      if(choice1 === 'Value330I'){
+            select1.options.length = 0;
+            for(index in m330I) {
+                select1.options[select1.options.length] = new Option(m330I[index], index);
+             }
+        }
+        if(choice1 === 'ValueM4'){
+            select1.options.length = 0;
+            for(index in M4) {
+                select1.options[select1.options.length] = new Option(M4[index], index);
+             }
+        }
+    }
+  document.getElementById("color").onchange=function(){
+      var src=document.getElementById("color").value;
+      
+      var image=document.getElementById("image")
+      switch(src){
+          case src:image.src="Images/"+src+".JPG"; break;
+      }
+  }
+   
+</script>
+</body>
+<footer>   
+<div id="footer" class="container-fluid" style="height: 100%;">
+    <div class="row">
+        <!-- copyright -->
+        <p class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center">© 2019 Automobile. All
+            Rights Reserved | Design by
+            <i style="color: red"> M.Lokesh Venkata Sai |P.Chaitanya |P. Sai Krishna Vamsi |Pradeep Yadav  Students NIIT University</i>
+        </p>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <ul style="list-style: none;text-align: center" class="icons">
+                <li style="display: inline">
+                    <a href="#" class="rounded-circle">
+                        <span class="fa fa-facebook-f"></span>
+                    </a>
+                </li>
+                <li style="display: inline">
+                    <a href="#" class="rounded-circle">
+                        <span class="fa fa-google-plus"></span>
+                    </a>
+                </li>
+                <li style="display: inline">
+                    <a href="#" class="rounded-circle" >
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                </li>
+                <li style="display: inline" >
+                    <a href="#" class="rounded-circle" style="display: inline">
+                        <span class="fa fa-dribbble"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+</footer>
+</html>

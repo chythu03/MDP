@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+      
+      <link rel="stylesheet" href="main.css">
+
+    <title>FixKar</title>
+      <link rel = "icon" type = "image/png" href = "Images/test4.png">
+      <style>
+           @import url('https://fonts.googleapis.com/css?family=Exo|Mako|Questrial|Quicksand');
+          *{
+              /*font-family: "Quicksand";*/
+              font-family: "Questrial";
+          }
+          .gal{
+              width: 350px;
+              height: 300px;
+          }
+          .gal
+            {
+              transition: transform .2s; /* Animation */
+            }
+          .gal:hover{
+                transform: scale(1.1);
+                border-radius: 25px;
+                transition: 1s;
+            }
+      </style>
+       </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">     
+        <nav class="navbar navbar-inverse navbar-fixed-top bg-dark navbar-dark navbar-expand-md">
+            <img src="Images/test2.png" style="height: 30px;width: 30px">
+        <a class="navbar-brand" href="index.html">FixKar</a>
+            
+          <div class="collapse navbar-collapse" id="myNavbar">
+           <ul class="nav navbar-nav" style="float: right">
+      <li><a href="index.html#section1">HOME</a></li>
+      <li><a href="index.html#section2">ABOUT US</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES </a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#section3" style="color: gray">Wheels</a></li>
+          <li><a href="index.html#section3-1" style="color: gray">Lights</a></li>
+          <li><a href="index.html#section3-2" style="color: gray">Seat Covers</a></li>
+            <li><a href="index.html#section3-3" style="color: gray">Shark Fin</a></li>
+            <li><a href="index.html#section3-4" style="color: gray">Media Player</a></li>
+            <li><a href="index.html#section3-5" style="color: gray">Colour your Car</a></li>
+        </ul>
+      </li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="index.html#section4">TEAM</a></li>
+      <li><a href="index.html#section5">TESTIMONIALS</a></li>
+      <li><a href="index.html#section6">CONTACT US</a></li>
+      <li><a href="visual.html" target="_blank">VISUALIZE</a></li>
+      <li><a href="estimate.html" target="_blank">ESTIMATE</a></li>
+    </ul>
+          </div>
+         <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+              </button>
+            </div>    
+        </nav>
+      
+        <div class="container-fluid" style="text-align: center">
+            <h3 style="padding-top: 0px;text-align: center ">Our Customized cars </h3><br>
+            <div class="Images" id="ID"></div>
+            <script>
+                function myfunction(){
+                var i=1;
+                for(i=1;i<=20;i++)
+                    {
+                        y=document.getElementsByClassName("Images");
+                        var img="Images/g"+i+".jpg"
+                        var x = document.createElement("IMG");
+                        
+                          x.setAttribute("src", img);
+                          x.setAttribute("class","gal")
+                          x.setAttribute("alt", "Image="+i);
+                          x.setAttribute("style", "border: 5px");
+                          x.setAttribute("style", "padding: 5px");
+                          y[0].appendChild(x);
+                          
+                    }
+                }
+                myfunction();
+            </script>
+        </div>
+      
+    </body>
+    
+</html>

@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+      
+      <link rel="stylesheet" href="main.css">
+
+    <title>FixKar</title>
+      <link rel = "icon" type = "image/png" href = "Images/test4.png">
+      <style>
+          @import url('https://fonts.googleapis.com/css?family=Exo|Mako|Questrial|Quicksand');
+          *{
+              font-family: "Quicksand";
+              /*font-family: "Questrial";*/
+          }
+          #section1{
+            background-image: url(Images/first.jpg);
+            height: 100h;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+          }
+          .classTotal{
+          	color: red;
+          	font-weight: bold;
+          }
+          
+          .icons{
+              padding: 5px;
+          }
+          .icons li{
+              padding: 10px;
+          }
+          
+      </style>
+      
+       </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+      
+<nav class="navbar navbar-inverse navbar-fixed-top bg-dark navbar-dark navbar-expand-md">
+    <img src="Images/test2.png" style="height: 30px;width: 30px">
+<a class="navbar-brand" href="#section1">FixKar</a>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav" style="float: right">
+      <li><a href="index.html#section1">HOME</a></li>
+      <li><a href="index.html#section2">ABOUT US</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES </a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#section3" style="color: gray">Wheels</a></li>
+          <li><a href="index.html#section3-1" style="color: gray">Lights</a></li>
+          <li><a href="index.html#section3-2" style="color: gray">Seat Covers</a></li>
+            <li><a href="index.html#section3-3" style="color: gray">Shark Fin</a></li>
+            <li><a href="index.html#section3-4" style="color: gray">Media Player</a></li>
+            <li><a href="index.html#section3-5" style="color: gray">Colour your Car</a></li>
+        </ul>
+      </li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="index.html#section4">TEAM</a></li>
+      <li><a href="index.html#section5">TESTIMONIALS</a></li>
+      <li><a href="index.html#section6">CONTACT US</a></li>
+        <li><a href="visual.html" target="_blank">VISUALIZE</a></li>
+      <li><a href="estimate.html" target="_blank">ESTIMATE</a></li>
+    </ul>
+  </div>
+ <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+    </div>    
+</nav>
+<div id="section1">
+    <div class="row">
+        <div class="col-lg-12 col-xs-12 col-md-12 col-sm-12 align-self-center">
+            <h3 style="text-align: center">Customize</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 align-self-center"></div>
+        
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 align-self-center">
+            <form action="#" method="post">
+                <div class="form-group">
+                  <label for="wheel">Wheel:</label>
+                  <select class="form-control" id="wheel" name="wheel" onchange="calculateAmount()">
+                    <option>--None--</option>
+                    <option>54a7</option>
+                    <option>34a1c7</option>
+                    <option>73a3b7</option>
+                    <option>53cf45</option>
+                    <option>520ab7</option>
+                    <option>54b67</option>
+                  </select><br>
+                    <label for="lights">Lights:</label>
+                  <select class="form-control" id="lights" name="lights" onchange="calculateAmount()">
+                    <option>--None--</option>
+                    <option>L45v6</option>
+                    <option>L43v3</option>
+                    <option>L26f6</option>
+                    <option>L35h9</option>
+                    <option>L4x5v6</option>
+                    <option>L85t6</option>
+                    <option>L95g6</option>
+                    <option>L8p36</option>
+                  </select><br>
+                    <label for="seat">Seat Cover:</label>
+                  <select class="form-control" id="seat" name="seat" onchange="calculateAmount()">
+                    <option>--None--</option>
+                    <option>S5v6</option>
+                    <option>S42h6</option>
+                    <option>S5p9</option>
+                    <option>S7d56</option>
+                    <option>S4ui6</option>
+                    <option>S8t3</option>
+                  </select>
+                  <br>
+                    <label for="shark">Shark Fin:</label>
+                  <select class="form-control" id="shark" name="shark" onchange="calculateAmount()">
+                    <option>--None--</option>
+                    <option>Shv6</option>
+                    <option>Sh6h6</option>
+                    <option>Sh5t9</option>
+                    <option>Sh1y6</option>
+                  </select>
+                  <br>
+                    <label for="mp">Media Player:</label>
+                  <select class="form-control" id="mp" name="mp" onchange="calculateAmount()">
+                    <option>--None--</option>
+                    <option>Au1b4</option>
+                    <option>Au1b6t</option>
+                    <option>Au7gd4</option>
+                    <option>Au8gt2</option>
+                  </select>
+                  <br>
+                  <label for="colour">Colour:</label>
+                  <select class="form-control" id="colour" name="colour" onchange="calculateAmount()">
+                    <option>--None--</option>
+                    <option>c1</option>
+                    <option>c2</option>
+                    <option>c3</option>
+                    <option>c4</option>
+                    <option>c5</option>
+                    <option>c6</option>
+                    <option>c7</option>
+                    <option>c8</option>
+                    <option>c9</option>
+                    <option>c10</option>
+                    <option>c11</option>
+                    <option>c12</option>
+                  </select>
+                  <br>
+                </div>
+            <label for="tot_amount">Tentative Total Amount:</label>
+            <input type="text" name="tot_amount" id="tot_amount" class="classTotal" readonly><p style="color: blue;font-size: 10px"><su>*</su>Discount may available at outlet</p><br><br>
+            
+          </form>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 align-self-center"></div>
+    </div>
+      
+</div>
+<footer>   
+<div id="footer" class="container-fluid">
+    <div class="row">
+        <!-- copyright -->
+        <p class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center">© 2019 Automobile. All
+            Rights Reserved | Design by
+            <i style="color: red"> M.Lokesh Venkata Sai |P.Chaitanya |P. Sai Krishna Vamsi |Pradeep Yadav  Students NIIT University</i>
+        </p>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <ul style="list-style: none;text-align: center" class="icons">
+                <li style="display: inline">
+                    <a href="#" class="rounded-circle">
+                        <span class="fa fa-facebook-f"></span>
+                    </a>
+                </li>
+                <li style="display: inline">
+                    <a href="#" class="rounded-circle">
+                        <span class="fa fa-google-plus"></span>
+                    </a>
+                </li>
+                <li style="display: inline">
+                    <a href="#" class="rounded-circle" >
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                </li>
+                <li style="display: inline" >
+                    <a href="#" class="rounded-circle" style="display: inline">
+                        <span class="fa fa-dribbble"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+</footer> 
+</body>
+
+<script type="text/javascript">
+	function calculateAmount() {
+		var total;
+		total = calculateWheelAmount() + calculateLightAmount() + calculateSeatAmount() + calculateSharkAmount()+calculateMpAmount() + calculateColourAmount();
+		document.getElementById("tot_amount").value = total;
+	}
+	function calculateWheelAmount() {
+		var wheelAmount = Number("0");
+		var choice = document.getElementById("wheel").value;
+		switch(choice) {
+			case "54a7": wheelAmount = 10450; break;
+			case "34a1c7": wheelAmount = 12350; break;
+			case "73a3b7": wheelAmount = 15470; break;
+			case "53cf45": wheelAmount = 13410; break;
+			case "520ab7": wheelAmount = 14600; break;
+			case "54b67": wheelAmount = 10550; break;
+			default: wheelAmount = 0; break;
+		}
+		return wheelAmount;
+	}
+	function calculateLightAmount() {
+		var lightAmount = Number("0");
+		var choice = document.getElementById("lights").value;
+		switch(choice) {
+			case "L45v6": lightAmount = 2300; break;
+			case "L43v3": lightAmount = 2380; break;
+			case "L26f6": lightAmount = 3400; break;
+			case "L35h9": lightAmount = 3045; break;
+			case "L4x5v6": lightAmount = 2300; break;
+			case "L85t6": lightAmount = 3260; break;
+			case "L95g6": lightAmount = 2028; break;
+			case "L8p36": lightAmount = 2250; break;
+			default : lightAmount = 0; break;
+		}
+		return lightAmount;
+	}
+	function calculateSeatAmount() {
+		var seatAmount = Number("0");
+		var choice = document.getElementById("seat").value;
+		switch(choice) {
+			case "S5v6": seatAmount = 1040; break;
+			case "S42h6": seatAmount = 2035; break;
+			case "S5p9": seatAmount = 1400; break;
+			case "S7d56": seatAmount = 2035; break;
+			case "S4ui6": seatAmount = 1370; break;
+			case "S8t3": seatAmount = 2045; break;
+			default : seatAmount = 0; break;
+		}
+		return seatAmount;
+	}
+	function calculateSharkAmount() {
+		var sharkAmount = Number("0");
+		var choice = document.getElementById("shark").value;
+		switch(choice) {
+			case "Shv6": sharkAmount = 1400; break;
+			case "Sh6h6": sharkAmount = 1300; break;
+			case "Sh5t9": sharkAmount = 1600; break;
+			case "Sh1y6": sharkAmount = 900; break;
+			default: sharkAmount = 0; break;
+		}
+		return sharkAmount;
+	}
+    function calculateMpAmount() {
+		var mpAmount = Number("0");
+		var choice = document.getElementById("mp").value;
+		switch(choice) {
+			case "Au1b4": mpAmount = 18500; break;
+			case "Au1b6t": mpAmount = 2500; break;
+			case "Au7gd4": mpAmount = 11300; break;
+			case "Au8gt2": mpAmount = 16860; break;
+			default: mpAmount = 0; break;
+		}
+		return mpAmount;
+	}
+	function calculateColourAmount() {
+		var colourAmount = Number("0");
+		var choice = document.getElementById("colour").value;
+		switch(choice) {
+			case "c1": colourAmount = 7000; break;
+			case "c2": colourAmount = 3000; break;
+			case "c3": colourAmount = 7000; break;
+			case "c4": colourAmount = 3000; break;
+			case "c5": colourAmount = 7000; break;
+			case "c6": colourAmount = 3000; break;
+			case "c7": colourAmount = 3000; break;
+			case "c8": colourAmount = 5000; break;
+			case "c9": colourAmount = 5000; break;
+			case "c10": colourAmount = 15000; break;
+			case "c11": colourAmount = 3000; break;
+			case "c12": colourAmount = 7000; break;
+			default : colourAmount = 0; break;
+		}
+		return colourAmount;
+	}
+</script>
+</html>

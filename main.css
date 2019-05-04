@@ -1,0 +1,252 @@
+
+body {
+    position: relative; 
+     height: 100%
+
+  }
+.dropdown-menu{
+background: black;
+}
+  .container-fluid{
+      padding-top:70px;
+      padding-bottom:70px; 
+      height: 100vh
+  }
+   .container{
+      padding-top:70px;
+      padding-bottom:70px; 
+      height: 100vh
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+  #section1
+  {
+        padding-top: 150px;
+        position: relative;
+
+        color: white;
+        background-image: url(Images/second.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100h;
+  }
+  #section2
+  {
+        position: relative;
+        color: white;
+        background-image: url(Images/img.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100h;
+      text-align: center;
+  }
+  #section3
+  {
+        position: relative;
+        color: white;
+        #background-image: url(Images/img1.jpg);
+      background-color: black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+
+  }
+  #section3-1
+  {
+        position: relative;
+        color: white;
+        #background-image: url(Images/img1.jpg);
+      background-color: #1C1C1F;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+
+  }
+#section3-3{
+background-color: black;
+color: white;
+}
+#section3-4{
+    background-color: white;
+    color: black;
+}
+.colors{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.square {
+  height: 45px;
+  width: 45px;
+    text-align: center;
+  border-radius: 50%;
+}
+.square:hover{
+    border: 1.5px solid black;
+}
+.mp:hover{
+    border: 1.5px solid black;
+}
+.rotate-icon
+{
+  transition: transform 0.3s ease-out;
+}
+.rotate-link:hover .rotate-icon
+{
+  transform: rotateY(360deg);
+}
+.rotate-linkb:hover .rotate-icon1
+{
+  transform: rotateX(360deg);
+}
+.rotate-icon1
+{
+  transition: transform 1s ease-out;
+}
+.wheel
+{
+    padding: 20px;
+    text-align: center;
+}
+.wheel img:hover{
+    border: 1px solid white;
+}
+.Lights
+{
+    text-align: center;
+}
+.Lights img{
+  filter: none;
+    -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.Lights img:hover{
+    border: 1px solid white;
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    -moz-filter:    grayscale(0%);
+    -ms-filter:     grayscale(0%);
+    -o-filter:      grayscale(0%);
+}
+.seat
+{
+  transition: transform .2s; /* Animation */
+}
+.seat img:hover{
+    transform: scale(1.1);
+    border-radius: 25px;
+    transition: 1s;
+}
+.shark{
+    text-align: center;
+}
+.shark img{
+  transition:.3s;
+  border-radius:4px;
+}
+.shark img:hover{
+    border: 1.5px solid blue;
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px cyan;
+}
+.team{
+    text-align: center;
+}
+#section3-2
+  {
+        position: relative;
+        color: white;
+        #background-image: url(Images/img1.jpg);
+        background-color: #515051  ;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        padding: 10px;
+
+  }
+#footer{
+    height: 100%;
+    background-color: black;
+    color: white;
+    left: 0;
+    bottom: 0;
+}
+  #section4
+  {
+      #background: #5B5B5B;
+      background-image: url(Images/four4.jpg);
+      background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        padding: 10px;
+      height: 100%;
+      color: white;
+  }
+  #section5
+  {
+      #background-image: url(Images/third.jpg);
+      background-color: black;
+      background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        padding: 10px;
+      height: 100%;
+      color: white;
+      text-align: center;
+      
+  }
+  #section6
+  {
+      background: #231E23;
+      color: white;
+      height: 100%;
+  }
+  .card
+  {
+      background: #BB8FCE;
+  }
+
+  .arrow{
+      position: relative;
+      font-size:50px;
+      text-align:center;
+      animation: bouncearrow 1s infinite;
+
+    }
+
+
+    @keyframes bouncearrow{
+        0%{bottom: 0px;}
+        50%{bottom: 20px; color: #000000;}
+        100%{bottom: 0px;}
+    }
+
+  /* For mobile phones: */
+    [class*="col-"] {
+
+    }
+    @media (max-width: 480px) {  }
+
+    @media only screen and (min-width: 600px) {
+      /* For tablets: */
+
+    }
+    @media only screen and (min-width: 768px) {
+      /* For desktop: */
+
+    }
